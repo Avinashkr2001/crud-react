@@ -50,7 +50,7 @@ function Login({ handleLogin }) {
                             className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-custom-2"
                             id="password"
                             type="password"
-                            placeholder="******************"
+                            placeholder="*************"
                             value={password}
                             onChange={e => setPassword(e.target.value)}
                         />
