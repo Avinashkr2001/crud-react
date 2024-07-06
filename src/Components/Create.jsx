@@ -35,7 +35,7 @@ export const Create = ({ onClose }) => {
                     body: JSON.stringify(data)
                 }).then((result) => {
                     Swal.fire("Saved", "User added successfully", "success");
-                    onClose(); // Fixed typo here
+                    onClose();
                     navigate('/admin', { state: { data: data } })
                 }).catch((err) => {
                     console.log(err);
