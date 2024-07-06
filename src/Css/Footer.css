@@ -1,0 +1,33 @@
+footer {
+    border-top: 1px solid whitesmoke;
+    background-color: #B5C18E;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .flex {
+    flex-wrap: wrap;
+}
+
+footer .text-2xl {
+    font-size: 1.5rem;
+}
+
+footer .text-xl {
+    font-size: 1.25rem;
+}
+
+footer .hover\:text-gray-300:hover {
+    color: #d1d5db;
+}
+
+footer .hover\:underline:hover {
+    text-decoration: underline;
+}

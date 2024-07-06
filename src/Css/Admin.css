@@ -1,0 +1,277 @@
+.table-container {
+    padding: 0 10%;
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #ee2828;
+}
+
+.ht-bt {
+    height: 100%;
+    width: 100%;
+}
+
+/* Base button styles */
+.button-add {
+    background-color: #089606;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.admin-logout-btn{
+    background-color: #f56565;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:'5px';
+}
+.admin-logout-btn-icon{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.admin-logout-btn:hover{
+    background: #e53e3e;
+}
+
+/* Hover styles */
+.button-add:hover {
+    background-color: #2563eb;
+}
+
+.sp-cont {
+    margin-left: 10px;
+}
+
+.add-icon {
+    color: rgb(241, 2, 18);
+    font-size: 20px;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.edit {
+    color: #04b1d4;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+
+}
+
+.table thead tr th {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2ef;
+}
+
+.table tbody tr td {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+
+/* table data ended */
+/* pop up add data */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.811);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay .popup {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    animation: zoom-in 0.5s ease;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.overlay .close {
+    position: relative;
+    display: flex;
+    float: right;
+    background: none;
+    border: none;
+    animation: zoom-in 0.5s ease;
+}
+
+.close-btn-crt {
+    color: #fff;
+    box-shadow: rgba(244, 240, 240, 0.795) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.popup__content h2 {
+    text-align: center;
+    color: black;
+}
+
+.create-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the form groups */
+.form-group1,
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styling for the labels */
+.create-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the input fields */
+.create-input1,
+.create-input2 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Styling for the submit button */
+.create-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+    background-color: #45a049;
+}
+
+.update-data-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.edit {
+    color: #04b1d4;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table tbody tr td {
+        text-align: right;
+        padding-left: 25%;
+        position: relative;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        color: #fff;
+    }
+}

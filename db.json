@@ -1,0 +1,45 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    }
+  ],
+  "user": [
+    {
+      "username": "Avinash123",
+      "name": "Avinash kumar",
+      "email": "2019avinash2001@gmail.com",
+      "mobile": "9934247022",
+      "address": "Madhya pradesh 462022",
+      "password": "123",
+      "profileImage": {},
+      "id": "2bea"
+    },
+    {
+      "username": "Ashutosh123",
+      "email": "ashutoshkumar@gmail.com",
+      "name": "Ashutosh kumar",
+      "mobile": "7762109670",
+      "id": "58fe"
+    },
+    {
+      "id": "87be",
+      "username": "Avinash0198",
+      "email": "2001kumaravinash@gmail.com",
+      "name": "Avinash kumar",
+      "mobile": "09934247022",
+      "password": "123345"
+    },
+    {
+      "username": "Ashutosh12345",
+      "name": "Ashutosh kumar",
+      "email": "ashutoshkumar18830@gmail.com",
+      "mobile": "07762109670",
+      "address": "bhopal 462022",
+      "password": "123345",
+      "id": "a57b"
+    }
+  ]
+}
