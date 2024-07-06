@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { IoCloudUploadOutline } from "react-icons/io5";
 import '../Css/Profile.css';
 
 const Profile = () => {
