@@ -18,7 +18,6 @@ export const Create = ({ onClose }) => {
             onClose();
         }
     }
-
     const handleAdd = async (e) => {
         e.preventDefault();
         const data = { username, email, name, mobile, 'password':password };
