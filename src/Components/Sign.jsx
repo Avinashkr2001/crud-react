@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import {toast} from 'react-toastify'
-
 function Sign() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
