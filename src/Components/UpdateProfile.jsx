@@ -36,11 +36,8 @@ const UpdateProfile = () => {
                 }
             }
         };
-
         fetchData();
     }, [id, navigate]);
-
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         Swal.fire({
