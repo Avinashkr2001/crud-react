@@ -17,7 +17,6 @@ const Products = () => {
                 console.error('Error fetching products:', error);
             }
         };
-
         fetchProducts();
     }, []);
 
