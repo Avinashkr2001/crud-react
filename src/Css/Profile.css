@@ -124,7 +124,6 @@
     background-color: #555;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .profile-container {
         padding: 10px;
