@@ -16,7 +16,7 @@
 .profile-edit-form {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 15px;
 }
 
 .profile-edit-field {
