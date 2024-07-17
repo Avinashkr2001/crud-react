@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes, FaShoppingCart, FaSearch, FaChevronDown } from 'react-icons/fa';
-import '../Css/Header.css';
 
 const Header = ({ isLoggedIn, handleLogout }) => {
   const [isOpen, setIsOpen] = useState(false);

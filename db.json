@@ -8,16 +8,6 @@
   ],
   "user": [
     {
-      "username": "Avinash123",
-      "name": "Avinash kumar",
-      "email": "2019avinash2001@gmail.com",
-      "mobile": "9934247022",
-      "address": "Madhya pradesh 462022",
-      "password": "123",
-      "profileImage": {},
-      "id": "2bea"
-    },
-    {
       "username": "Ashutosh123",
       "email": "ashutoshkumar@gmail.com",
       "name": "Ashutosh kumar",
@@ -40,6 +30,14 @@
       "address": "bhopal 462022",
       "password": "123345",
       "id": "a57b"
+    },
+    {
+      "id": "dde4",
+      "username": "wery",
+      "email": "dfghjk",
+      "name": "rt7uj",
+      "mobile": "3456789",
+      "password": "123345"
     }
   ]
 }
