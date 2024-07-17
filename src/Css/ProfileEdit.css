@@ -51,7 +51,6 @@
     background-color: #218838;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .profile-edit-wrapper {
         padding: 10px;
