@@ -78,7 +78,7 @@ const Header = ({ isLoggedIn, handleLogout }) => {
           <div className="-mr-2 flex md:hidden">
             <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
               <span className="sr-only">Open main menu</span>
-              {isOpen ? <FaTimes />  <FaBars />}
+              {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
         </div>
