@@ -31,7 +31,7 @@ function Sign() {
                         Swal.fire("Registered","user registered successfull",'success');
                         navigate('/login');
                     }).catch((err)=>{
-                        console.log(er);
+                        console.log(err);
                     })
 
                 }
