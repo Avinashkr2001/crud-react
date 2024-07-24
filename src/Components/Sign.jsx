@@ -18,7 +18,7 @@ function Sign() {
             try{
                 let response=await fetch("http://localhost:8000/user");
                 let data=await response.json();
-                let user=data.find(user=>user.username==username || user.email===email);
+                let user=data.find(user=>user.username===username || user.email===email);
                 if(user){
                     toast.error("Username or Email already exists")
                 }else{
