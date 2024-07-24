@@ -45,7 +45,7 @@ function Sign() {
             <div className="bg-custom-4 p-6 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm">
                 <h2 className="text-2xl font-bold text-center mb-4">Sign Up</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-4">
+                    <div className="mb-3">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
                             Username
                         </label>
