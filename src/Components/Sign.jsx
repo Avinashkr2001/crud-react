@@ -10,7 +10,7 @@ function Sign() {
     const [password, setPassword] = useState('');
     const [password2, setPassword2] = useState('');
     const navigate = useNavigate();
-    const handleSubmit = async (e) => {
+    const handleSubmit  async (e) => {
         e.preventDefault();
         if (password !== password2) {
             toast.warning("password is not matched")
