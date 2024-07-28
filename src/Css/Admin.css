@@ -235,7 +235,7 @@
 
 .edit {
     color: #04b1d4;
-    cursor: pointer;
+    cursor: default;
     font-size: 30px;
     margin-left: 20px;
 }
