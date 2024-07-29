@@ -187,7 +187,7 @@
 
 /* Styling for the labels */
 .create-form label {
-    margin-bottom: px;
+    margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
