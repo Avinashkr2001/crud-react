@@ -152,7 +152,7 @@
     position: relative;
     display: flex;
     float: right;
-    background: non;
+    background: none;
     border: none;
     animation: zoom-in 0.5s ease;
 }
