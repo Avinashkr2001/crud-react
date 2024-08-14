@@ -13,7 +13,7 @@ function Sign() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (password !== password2) {
-        
+    
             toast.warning("password is not matched")
         }else{
             try{
