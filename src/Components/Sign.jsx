@@ -14,7 +14,7 @@ function Sign() {
         e.preventDefault();
         if (password !== password2) {
             toast.warning("password is not matched")
-    
+
         }else{
             try{
                 let response=await fetch("http://localhost:8000/user");
