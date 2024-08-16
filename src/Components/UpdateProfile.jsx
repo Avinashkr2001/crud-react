@@ -50,10 +50,11 @@ const UpdateProfile = () => {
             confirmButtonText: 'Yes, update it!',
         }).then((result) => {
             if (result.isConfirmed) {
-                const data={username,name,email,mobile,address,password,'profileImage':profileImage}
+                const data = { username, name, email, mobile, address, password, 'profileImage': profileImage }
+
                 fetch(`http://localhost:8000/user/${id}`, {
                     method: 'PUT',
-                    headers:{'content-type':'application/json'},
+                    headers: { 'content-type': 'application/json' },
                     body: JSON.stringify(data)
                 }).then((response) => {
                     if (response.ok) {
@@ -79,7 +80,7 @@ const UpdateProfile = () => {
                             id="name"
                             name="name"
                             value={name}
-                            onChange={e=>setName(e.target.value)}
+                            onChange={e => setName(e.target.value)}
                             required
                             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
@@ -91,7 +92,7 @@ const UpdateProfile = () => {
                             id="email"
                             name="email"
                             value={email}
-                            onChange={e=>setEmail(e.target.value)}
+                            onChange={e => setEmail(e.target.value)}
                             required
                             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                             readOnly
@@ -104,7 +105,7 @@ const UpdateProfile = () => {
                             id="mobile"
                             name="mobile"
                             value={mobile}
-                            onChange={e=>setMobile(e.target.value)}
+                            onChange={e => setMobile(e.target.value)}
                             required
                             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
@@ -116,7 +117,7 @@ const UpdateProfile = () => {
                             id="address"
                             name="address"
                             value={address}
-                            onChange={e=>setAddress(e.target.value)}
+                            onChange={e => setAddress(e.target.value)}
                             required
                             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
@@ -127,7 +128,7 @@ const UpdateProfile = () => {
                             type="file"
                             id="profileImage"
                             name="profileImage"
-                            onChange={e=>setProfileImage(e.target.files[0])}
+                            onChange={e => setProfileImage(e.target.files[0])}
                             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
                     </div>
