@@ -51,7 +51,7 @@ const UpdateProfile = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 const data = { username, name, email, mobile, address, password, 'profileImage': profileImage }
-                 
+            
                 fetch(`http://localhost:8000/user/${id}`, {
                     method: 'PUT',
                     headers: { 'content-type': 'application/json' },
