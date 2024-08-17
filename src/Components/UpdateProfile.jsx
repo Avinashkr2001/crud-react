@@ -47,6 +47,7 @@ const UpdateProfile = () => {
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
 
+            
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, update it!',
         }).then((result) => {
