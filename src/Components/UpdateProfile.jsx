@@ -54,7 +54,7 @@ const UpdateProfile = () => {
                 fetch(`http://localhost:8000/user/${id}`, {
                     method: 'PUT',
                     headers: { 'content-type': 'application/json' },
-                
+            
                     body: JSON.stringify(data)
                 }).then((response) => {
                     if (response.ok) {
