@@ -50,7 +50,7 @@ const UpdateProfile = () => {
             confirmButtonText: 'Yes, update it!',
         }).then((result) => {
             if (result.isConfirmed) {
-                const data = { username, name, email, mobile, address, password, 'profileImage': profileImage } 
+                const data = { username, name, email, mobile, address, password, 'profileImage': profileImage }
                 fetch(`http://localhost:8000/user/${id}`, {
                     method: 'PUT',
                     headers: { 'content-type': 'application/json' },
